@@ -10,10 +10,49 @@
 <h1>Hardwareccs.com</h1>
 
 <!--links-->
-<a href="contacto.html">Contacto</a> <a href="cuentas.html">Cuentas</a> <a href="index.html">Home</a>
+<a href="index.html">Home</a>
+<a href="cuentas.html">Cuentas</a>
+<a href="media.html">Media</a>
 <a href="pagos.html">Pagos Mercadolibre</a>
+<a href="contacto.html">Contacto</a>
 <br><br><br>
-<h4>Pagos Mercadolibre</h4>
+<h2>Pagos Mercadolibre</h2>
+
+<br><h3>Formulario</h3>
+<p>
+  Por favor llena esta forma para proceder con tu envio.
+</p>
+<form action="formulario.php" method="post">
+  <input type="text" name="name" placeholder="Nombre" required><br>
+  <input type="tel" name="phone" placeholder="Telefono" required><br>
+  <input type="tel" name="cedula" placeholder="Cedula" required><br>
+  <input type="date"></input><br>
+  <input type="text" name="articulo" placeholder="Articulo comprado" required><br>
+  <input type="tel" name="transaccion" placeholder="Numero de transaccion" required><br>
+  <h4>Desea que le enviemos la mercancia</h4>
+  <input type="radio" name="envio" value="si">Si
+  <input type="radio" name="envio" value="no">No
+  <h4>Forma de Pago</h4>
+    <input type="radio" name="pago" value="provincial">Provincial <br>
+    <input type="radio" name="pago" value="mercantil">Mercantil <br>
+    <input type="radio" name="pago" value="banesco">Banesco <br>
+    <input type="radio" name="pago" value="venezuela">Venezuela <br>
+    <input type="radio" name="pago" value="BFC">BFC <br>
+    <input type="radio" name="pago" value="BNC">BNC <br>
+    <input type="radio" name="pago" value="mp">Mercado Pago <br>
+    <h4>Forma de envio</h4>
+    <select name="encomieda">
+      <option value="mrw" selected> MRW </option>
+    <option value="tealca" selected> Tealca </option>
+    <option value="domesa" selected> Domesa </option>
+    <option value="retiro" selected> Retirar en persona  </option>
+  </select>
+    <h4>Comentarios</h4>
+    <textarea name="message"></textarea><br>
+    
+  <input type="submit"  value="submit">
+
+</form>
 <br><br><br><a href="http://www.hardwareccs.com" target="_blank">Haz click aqui</a>
 </body>
 </html>
